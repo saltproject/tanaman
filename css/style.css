@@ -17,12 +17,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('font/sofia/SofiaProRegular-Italic.eot');
-    src: local('font/sofia/Sofia Pro Regular Italic'), local('SofiaProRegular-Italic'),
-        url('font/sofia/SofiaProRegular-Italic.eot?#iefix') format('embedded-opentype'),
-        url('font/sofia/SofiaProRegular-Italic.woff2') format('woff2'),
-        url('font/sofia/SofiaProRegular-Italic.woff') format('woff'),
-        url('font/sofia/SofiaProRegular-Italic.ttf') format('truetype');
+    src: url('fonts/sofia/SofiaProRegular-Italic.eot');
+    src: local('fonts/sofia/Sofia Pro Regular Italic'), local('SofiaProRegular-Italic'),
+        url('fonts/sofia/SofiaProRegular-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/sofia/SofiaProRegular-Italic.woff2') format('woff2'),
+        url('fonts/sofia/SofiaProRegular-Italic.woff') format('woff'),
+        url('fonts/sofia/SofiaProRegular-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
