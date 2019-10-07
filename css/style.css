@@ -889,7 +889,7 @@ outline: none;
 border: none;
 border-radius: 0px;
 outline: none !important;
-box-shadow: 0px 1px 1px 0px black;
+
 }
 .contact-forms textarea {
 resize: none;
@@ -1597,3 +1597,4 @@ height: 129px;
 }
 }
 /*--//responsive--*/
+
