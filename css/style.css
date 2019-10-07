@@ -119,7 +119,6 @@ line-height: 28px;
 /*-- header --*/ 
 .header-outs {
 position: relative;
-background: url(../images/b2.jpg)no-repeat center;
 background-size: cover;
 -webkit-background-size: cover;
 -moz-background-size: cover;
@@ -127,6 +126,62 @@ background-size: cover;
 -ms-background-size: cover;
 min-height: 800px;
 }
+
+
+/* Make the image fully responsive */
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 125%;
+    margin-left: -10em;
+
+
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  } 
+
+
 .header-w3layouts {
 position: absolute;
 padding:1em 3em 1em;
@@ -774,13 +829,18 @@ color: white;
 }
 
 .stats {
-background: url(../images/s1.jpg)no-repeat center;
+background: url(../images/s1.jpg);
 background-size: cover;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 -ms-background-size: cover;
 color: white;
+
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 .count-icon span {
@@ -858,15 +918,24 @@ color: #fff;
 }
 /*--//video-- */
 /*-- blog-- */
-.blog{background: url(../images/b2.jpg)no-repeat center;
+.blog{background: url(../images/b2.jpg);
 background-size: cover;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
--ms-background-size: cover;}
+-ms-background-size: cover;
+
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
 .blog-grid-cover {
 background: #fff;
 padding: 20px 20px;
+
 }
 .date-tag a,.commant-tag a{
 font-size: 14px;

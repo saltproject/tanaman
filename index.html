@@ -38,6 +38,9 @@
     <!--//stylesheets-->
     <link href="//fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </head>
   <body>
     <div class="header-outs " id="header">
@@ -63,21 +66,73 @@
       </div>
       <!-- //nav -->
       <!-- //header -->
-      <div class="container">
-        <div class="slide-info text-center">
-          <div class="banner-top-grid">
-            <h4>Global Warming</h4>
-          </div>
-          <h5>Save Forest And Save Earth</h5>
-          <div class="slide-info-txt">
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt utadipiscing elit sed do eiusmod tempor incididunt Lorem</p>
-          </div>
-          <div class="two-mid-button d-flex justify-content-center mt-lg-5 mt-md-4 mt-sm-4 mt-3">
-          </div>
-        </div>
+      
+          <div id="demo" class="carousel slide" data-ride="carousel">
+
+              <!-- Indicators -->
+              <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+              </ul>
+            
+              <!-- The slideshow -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="video/seeds.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                      </video>
+                      <div class="carousel-caption">
+                          <h3>Los Angeles</h3>
+                          <p>We had such a great time in LA!</p>
+                        </div>
+                </div>
+                <div class="carousel-item">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="video/forest.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                      </video>
+                      <div class="carousel-caption">
+                          <h3>Los Angeles</h3>
+                          <p>We had such a great time in LA!</p>
+                        </div>
+                </div>
+                <div class="carousel-item">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="video/living_room.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                      </video>
+                      <div class="carousel-caption">
+                          <h3>Los Angeles</h3>
+                          <p>We had such a great time in LA!</p>
+                        </div>
+                </div>
+                <div class="carousel-item">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="video/bathroom.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                      </video>
+                      <div class="carousel-caption">
+                          <h3>Los Angeles</h3>
+                          <p>We had such a great time in LA!</p>
+                        </div>
+                </div>
+              </div>
+            
+              <!-- Left and right controls -->
+              <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            
+            </div>
       </div>
       <div class="clearfix"></div>
-    </div>
+   
     <!-- //banner -->
     <!-- service -->
     <section class="service py-lg-4 py-md-3 py-sm-3 py-3" id="service">
@@ -494,6 +549,25 @@
   <script src="js/imagesloaded.js"></script>
   <script src="js/skrollr.js"></script>
   <script src="js/_main.js"></script>
+
+  <script>
+      // Get the video
+      var video = document.getElementById("myVideo");
+      
+      // Get the button
+      var btn = document.getElementById("myBtn");
+      
+      // Pause and play the video, and change the button text
+      function myFunction() {
+        if (video.paused) {
+          video.play();
+          btn.innerHTML = "Pause";
+        } else {
+          video.pause();
+          btn.innerHTML = "Play";
+        }
+      }
+      </script>
     
 
   </body>
